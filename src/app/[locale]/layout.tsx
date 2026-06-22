@@ -21,7 +21,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "What About A World",
-  description: "Naplánuj si dovolenou sám/sama – AI asistent tě provede krok za krokem.",
+  description:
+    "Plan your own trip - no travel agency, no chaos. An AI assistant guides you step by step.",
 };
 
 export function generateStaticParams() {

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -10,10 +11,11 @@ export default function Header() {
         <Link href="/" className="text-lg font-semibold tracking-tight">
           What About A World
         </Link>
-        <div className="flex gap-6 text-sm font-medium">
+        <div className="flex items-center gap-6 text-sm font-medium">
           <Link href="/blog">{t("blog")}</Link>
-          <Link href="/kalkulacka">{t("calculator")}</Link>
-          <Link href="/asistent">{t("assistant")}</Link>
+          <Link href="/calculator">{t("calculator")}</Link>
+          <Link href="/assistant">{t("assistant")}</Link>
+          <LocaleSwitcher />
         </div>
       </nav>
     </header>

@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "calculator": "Calculator",
+    "assistant": "AI Assistant"
+  },
+  "home": {
+    "title": "What About A World",
+    "tagline": "Plan your own trip - no travel agency, no chaos.",
+    "description": "Our AI assistant guides you step by step through planning your whole trip: from picking a destination, through flights, accommodation and local transport, to your itinerary and packing list.",
+    "ctaAssistant": "Start the AI assistant",
+    "ctaBlog": "Read the blog",
+    "featuresTitle": "What you'll find here",
+    "featureAssistantTitle": "AI trip-planning assistant",
+    "featureAssistantText": "Walks you through a proven, step-by-step trip planning system.",
+    "featureCalculatorTitle": "Trip cost calculator",
+    "featureCalculatorText": "A rough estimate of flights, accommodation, transport and activities.",
+    "featureBlogTitle": "Travel blog",
+    "featureBlogText": "Practical tips and stories from real trips you can actually use."
+  },
+  "blog": {
+    "title": "Blog",
+    "empty": "Articles are on their way - check back soon for our first tips and trip reports."
+  },
+  "calculator": {
+    "title": "Trip cost calculator",
+    "description": "Get a rough budget estimate for your trip. This calculator is still under construction.",
+    "flights": "Flights",
+    "accommodation": "Accommodation",
+    "transport": "Local transport",
+    "baggage": "Baggage",
+    "activities": "Activities & excursions",
+    "total": "Total (estimate)",
+    "comingSoon": "The real calculation is coming in a future version."
+  },
+  "assistant": {
+    "title": "AI trip-planning assistant",
+    "description": "The assistant guides you through planning your trip - from picking a destination to packing your bag.",
+    "emailGateNotice": "The assistant is free - we'll just ask for your email before your first use.",
+    "inputPlaceholder": "Tell us where you'd like to go...",
+    "send": "Send",
+    "placeholderMessage": "The AI assistant is still being built. Soon we'll be planning your next trip together, step by step 🌍"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

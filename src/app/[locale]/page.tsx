@@ -8,12 +8,12 @@ export default function HomePage() {
     {
       title: t("featureAssistantTitle"),
       text: t("featureAssistantText"),
-      href: "/asistent" as const,
+      href: "/assistant" as const,
     },
     {
       title: t("featureCalculatorTitle"),
       text: t("featureCalculatorText"),
-      href: "/kalkulacka" as const,
+      href: "/calculator" as const,
     },
     {
       title: t("featureBlogTitle"),
@@ -36,7 +36,7 @@ export default function HomePage() {
         </p>
         <div className="flex flex-wrap gap-4 pt-2">
           <Link
-            href="/asistent"
+            href="/assistant"
             className="rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-zinc-700"
           >
             {t("ctaAssistant")}
