@@ -6,7 +6,7 @@ destination: "Mykonos, Řecko"
 coverImage: ""
 ---
 
-„Vítejte na ostrově větru,“ přesně tak nás přivítali na Mykonosu. A musím potvrdit, že nelhali. Vítr nás provázel celou dobu, ale při tamních teplotách je to spíše požehnání než překážka. Pokud plánujete cestu, tady je můj upřímný průvodce založený na vlastní zkušenosti z července.
+„Vítejte na ostrově větru,“ přesně tak nás přivítali na Mykonosu. A musím potvrdit, že nelhali. Vítr nás provázel celou dobu, ale při tamních teplotách je to spíše požehnání než překážka – meltemi, jak se mu místní říkají, vám příjemně provětrá vlasy na pláži i ochladí kůži po celodenním slunění. Mykonos je ostrov, kde se luxusní jachty potkávají s rozbitým chodníkem, kde za snídani zaplatíte jako za večeři doma, ale kde si zároveň najdete i klidnou pláž bez davu, pokud víte, kam jít. Přesně o tom je tento průvodce. Pokud plánujete cestu, tady je můj upřímný souhrn založený na vlastní zkušenosti z července – bez růžových brýlí, ale s láskou k tomuhle bláznivému ostrovu.
 
 ## Kdy vyrazit? Červenec mě překvapil
 
@@ -23,6 +23,26 @@ Cestování na Mykonos nemusí zruinovat rozpočet, pokud plánujete dopředu:
 - **Kde jsme bydleli:** Ubytování bylo trochu výzva, protože ceny rostly každým dnem. Nakonec jsme vybrali White and Grey Hotel. Má skvělou polohu (pár minut od letiště i od centra), krásný bazén a božské servírované snídaně, které se každý den měnily.
 - **Luxusní alternativa:** Pokud rozpočet neřešíte, jedním z nejluxusnějších hotelů na ostrově je ikonický Cavo Tagoo.
 - **Důležitá poznámka k bezpečnosti:** Možná se o tom tolik nemluví, ale kriminalita na Mykonosu po covidu s nárůstem turistů stoupla. Proto doporučuji nebydlet přímo v rušném centru města, ale raději kousek stranou (jako je právě White and Grey), kde je větší klid a bezpečno.
+
+## Mykonos Town: Procházka mezi větrnými mlýny a Little Venice
+
+Hlavní město ostrova, místní mu říkají Chora, je labyrint bílých uliček, kde se dá ztratit úplně dobrovolně. Není to náhoda – uličky se kdysi stavěly takhle úzké a klikaté záměrně, aby zmátly piráty. Funguje to i na turisty, takže se nebojte chvíli zabloudit, stejně narazíte na něco hezkého.
+
+- **Větrné mlýny (Kato Mili):** Ikonická pohlednice Mykonosu. Nejhezčí jsou těsně před a po západu slunce, kdy na ně padá zlaté světlo.
+- **Little Venice:** Domy postavené přímo nad mořem, balkony skoro mokré od vlnek. Skvělé místo na drink za zlatého času, i když si za výhled trochu připlatíte.
+- **Matoyianni Street:** Hlavní nákupní ulička plná butiků, šperkařství a cukrárenství – ideální na večerní procházku, i když nakupujete jen očima.
+
+## Výlet na Delos: kousek historie hned za rohem
+
+Pokud máte na ostrově víc než tři dny, vyrazte na půldenní výlet na Delos – posvátný ostrov antického Řecka, kam se dá dostat lodí z přístavu v Mykonos Town za pár desítek minut. Je to archeologická lokalita bez jediného moderního domu, takže působí trochu surreálně po pár dnech mezi bary a bazény. Doporučuji vzít si klobouk a hodně vody, stín tam prakticky neexistuje.
+
+## Doprava po ostrově
+
+Mykonos je menší, než si lidé myslí, ale autobusy nejezdí úplně podle hodinek a taxíky večer sháníte těžko. Nejvíc se nám osvědčilo:
+
+- **Pronájem auta nebo ATV:** Dává největší volnost, hlavně pokud chcete objet i vzdálenější pláže jako Agios Sostis nebo Fokos.
+- **Místní autobusy:** Levná varianta mezi Mykonos Town a hlavními plážemi, ale v sezóně bývají narvané.
+- **Pěšky a stopem:** Zní to šíleně, ale na kratší vzdálenosti to místní berou jako normální věc.
 
 ## Co navštívit: Moje nejoblíbenější místa
 
@@ -44,6 +64,13 @@ Tento bar vyžaduje tzv. „minimum spend“ (minimální útratu), která byla 
 - **Zážitek:** Rezervujte si místo u pódia (stage). Živá hudba, neskutečná zpěvačka a tanečníci při západu slunce – je to zážitek, který překoná jakoukoli party na ostrově. Program končí kolem 22:30.
 - **Doprava:** Parkovné u baru stojí 15 EUR. V Řecku je limit 0,5 promile alkoholu v krvi, ale zvažte raději Uber nebo chůzi.
 
+## Co si zabalit
+
+- **Šnorchl** – moře u Super Paradise Beach je neuvěřitelně čisté a hned vedle pláže si můžete užít i vodní sporty.
+- **Větru odolný klobouk nebo aspoň gumičku na vlasy** – meltemi nežertuje.
+- **Opalovací krém s vysokým faktorem** – slunce na Kykladách je intenzivnější, než čekáte, i v „mírnějším“ červenci.
+- **Hotovost na drobné výdaje** – ne všude na pláži přijímají karty, hlavně u menších bufetů.
+
 ## Závěrečný tip
 
-Nezapomeňte si s sebou vzít šnorchl, moře u Super Paradise Beach je neuvěřitelně čisté a hned vedle pláže si můžete užít i vodní sporty!
+Mykonos je ostrov extrémů – luxus hned vedle prostého života místních, drahé kluby hned vedle veřejných plážových koutů zdarma. Tajemství spokojené dovolené je nebát se kombinovat: jeden den si dovolit lehátko v první řadě, druhý den vzít vlastní ručník a šnorchl a vyrazit hledat klidnější zátoku. Takhle si Mykonos užijete naplno, bez pocitu, že jste vyhodili celý rozpočet na jeden víkend.
