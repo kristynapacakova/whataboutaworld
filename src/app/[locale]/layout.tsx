@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { Geist, Playfair_Display, Caveat } from "next/font/google";
+import { Geist, Playfair_Display, Caveat, Corinthia } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -21,6 +21,12 @@ const playfair = Playfair_Display({
 
 const caveat = Caveat({
   variable: "--font-caveat",
+  subsets: ["latin"],
+});
+
+const corinthia = Corinthia({
+  variable: "--font-corinthia-raw",
+  weight: "700",
   subsets: ["latin"],
 });
 
@@ -52,7 +58,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${playfair.variable} ${caveat.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${playfair.variable} ${caveat.variable} ${corinthia.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>

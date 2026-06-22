@@ -12,11 +12,8 @@ export default function Header() {
   return (
     <header className="border-b border-black/10">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-6">
-        <Link
-          href="/"
-          className="font-serif text-2xl tracking-tight sm:text-3xl"
-        >
-          What About A World
+        <Link href="/" className="font-corinthia text-4xl sm:text-5xl">
+          what about a world
         </Link>
 
         <nav className="flex w-full items-center justify-center gap-x-6 gap-y-2 text-xs font-medium tracking-[0.15em] uppercase sm:text-sm">
