@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Domů",
+    "blog": "Blog",
+    "calculator": "Kalkulačka",
+    "assistant": "AI asistent"
+  },
+  "home": {
+    "title": "What About A World",
+    "tagline": "Naplánuj si dovolenou sám/sama – bez cestovky, bez chaosu.",
+    "description": "AI asistent tě krok za krokem provede celým plánováním cesty: od výběru destinace přes letenky, ubytování a dopravu až po itinerář a balení.",
+    "ctaAssistant": "Spustit AI asistenta",
+    "ctaBlog": "Číst blog",
+    "featuresTitle": "Co tu najdeš",
+    "featureAssistantTitle": "AI asistent na plánování",
+    "featureAssistantText": "Provede tě osvědčeným systémem plánování cesty krok za krokem.",
+    "featureCalculatorTitle": "Kalkulačka nákladů",
+    "featureCalculatorText": "Orientační odhad cen letenek, ubytování, dopravy a aktivit.",
+    "featureBlogTitle": "Cestovní blog",
+    "featureBlogText": "Tipy a zkušenosti z cest, které se dají rovnou použít."
+  },
+  "blog": {
+    "title": "Blog",
+    "empty": "Články se připravují – brzy tu najdeš první tipy a reportáže z cest."
+  },
+  "calculator": {
+    "title": "Kalkulačka cesty",
+    "description": "Spočítej si orientační rozpočet na dovolenou. Tahle kalkulačka je zatím ve výstavbě.",
+    "flights": "Letenky",
+    "accommodation": "Ubytování",
+    "transport": "Doprava na místě",
+    "baggage": "Zavazadla",
+    "activities": "Výlety a aktivity",
+    "total": "Celkem (orientačně)",
+    "comingSoon": "Reálný výpočet doplníme v další verzi."
+  },
+  "assistant": {
+    "title": "AI asistent na plánování cesty",
+    "description": "Asistent tě provede plánováním cesty – od výběru destinace až po balení kufru.",
+    "emailGateNotice": "Asistent je zdarma, před prvním použitím si jen necháme tvůj e-mail.",
+    "inputPlaceholder": "Napiš, kam by ses chtěl/a vydat...",
+    "send": "Odeslat",
+    "placeholderMessage": "AI asistent se právě připravuje. Brzy tu s tebou budeme plánovat tvoji další cestu krok za krokem 🌍"
+  },
+  "footer": {
+    "rights": "Všechna práva vyhrazena."
+  }
+}
