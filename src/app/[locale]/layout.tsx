@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { Geist, Playfair_Display, Caveat, Corinthia } from "next/font/google";
+import { Geist, Playfair_Display, Caveat, Birthstone_Bounce } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -24,9 +24,9 @@ const caveat = Caveat({
   subsets: ["latin"],
 });
 
-const corinthia = Corinthia({
+const corinthia = Birthstone_Bounce({
   variable: "--font-corinthia-raw",
-  weight: "700",
+  weight: "400",
   subsets: ["latin"],
 });
 
