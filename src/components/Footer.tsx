@@ -1,13 +1,38 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import PlaceholderImage from "./PlaceholderImage";
 
 export default function Footer() {
   const t = useTranslations("footer");
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-black/10 py-6 dark:border-white/10">
-      <div className="mx-auto max-w-5xl px-6 text-sm text-zinc-500">
-        © {year} What About A World — {t("rights")}
+    <footer className="mt-20">
+      <div className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-400">
+        {t("instagramHandle")}
+      </div>
+      <div className="grid grid-cols-3 sm:grid-cols-6">
+        {Array.from({ length: 6 }).map((_, i) => (
+          <PlaceholderImage key={i} aspect="aspect-square" />
+        ))}
+      </div>
+
+      <div className="border-t border-black/10 dark:border-white/10">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-8 text-xs font-medium uppercase tracking-[0.15em] text-zinc-500 sm:flex-row sm:justify-between">
+          <nav className="flex gap-6">
+            <Link href="/blog">{t("destinations")}</Link>
+            <Link href="/blog">{t("about")}</Link>
+            <Link href="/blog">{t("blog")}</Link>
+            <Link href="/blog">{t("shop")}</Link>
+          </nav>
+          <nav className="flex gap-6 normal-case tracking-normal">
+            <Link href="/blog">{t("privacy")}</Link>
+            <Link href="/blog">{t("terms")}</Link>
+          </nav>
+        </div>
+        <div className="border-t border-black/5 px-6 py-4 text-center text-xs text-zinc-400 dark:border-white/5">
+          © {year} What About A World — {t("rights")}
+        </div>
       </div>
     </footer>
   );

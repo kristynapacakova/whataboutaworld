@@ -1,9 +1,16 @@
 {
   "nav": {
     "home": "Home",
+    "destinations": "Destinations",
     "blog": "Blog",
     "calculator": "Calculator",
-    "assistant": "AI Assistant"
+    "assistant": "AI Assistant",
+    "shop": "Shop",
+    "shopChecklists": "Travel Checklists",
+    "shopGiftGuide": "Holiday Gift Guide",
+    "shopMapPins": "Google Map Pins",
+    "about": "About",
+    "search": "Search"
   },
   "home": {
     "title": "What About A World",
@@ -17,7 +24,22 @@
     "featureCalculatorTitle": "Trip cost calculator",
     "featureCalculatorText": "A rough estimate of flights, accommodation, transport and activities.",
     "featureBlogTitle": "Travel blog",
-    "featureBlogText": "Practical tips and stories from real trips you can actually use."
+    "featureBlogText": "Practical tips and stories from real trips you can actually use.",
+    "posts": {
+      "readMore": "Read the post",
+      "rome": { "title": "Rome, Italy: The Ultimate Travel Guide" },
+      "bali": { "title": "Bali, Indonesia: A First-Timer's Itinerary" },
+      "lisbon": { "title": "Lisbon, Portugal: A Long Weekend Guide" },
+      "tokyo": { "title": "Tokyo, Japan: What to Know Before You Go" },
+      "santorini": { "title": "Santorini, Greece: Where to Stay & What to Skip" },
+      "mexico": { "title": "Mexico City: A Local-Style City Guide" }
+    }
+  },
+  "about": {
+    "greeting": "hello hi heyy",
+    "body": "We're What About A World - a travel project built for people who want to plan their own trips without a travel agency, but don't always know where to start. Here you'll find our blog, an AI planning assistant, and tools to help you get it right.",
+    "favoritesTitle": "Our favorite destinations so far",
+    "countries": ["Italy", "Portugal", "Indonesia", "Japan", "Mexico"]
   },
   "blog": {
     "title": "Blog",
@@ -43,6 +65,13 @@
     "placeholderMessage": "The AI assistant is still being built. Soon we'll be planning your next trip together, step by step 🌍"
   },
   "footer": {
+    "instagramHandle": "@whataboutaworld",
+    "destinations": "Destinations",
+    "about": "About",
+    "blog": "Blog",
+    "shop": "Shop",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
     "rights": "All rights reserved."
   }
 }

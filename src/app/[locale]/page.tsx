@@ -1,72 +1,41 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import PostGrid from "@/components/PostGrid";
+import AboutSection from "@/components/AboutSection";
 
 export default function HomePage() {
   const t = useTranslations("home");
 
-  const features = [
-    {
-      title: t("featureAssistantTitle"),
-      text: t("featureAssistantText"),
-      href: "/assistant" as const,
-    },
-    {
-      title: t("featureCalculatorTitle"),
-      text: t("featureCalculatorText"),
-      href: "/calculator" as const,
-    },
-    {
-      title: t("featureBlogTitle"),
-      text: t("featureBlogText"),
-      href: "/blog" as const,
-    },
-  ];
-
   return (
-    <div className="mx-auto max-w-5xl px-6 py-16">
-      <section className="flex flex-col gap-6">
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          {t("title")}
-        </h1>
-        <p className="text-xl text-zinc-600 dark:text-zinc-400">
+    <div className="mx-auto max-w-6xl px-6 py-16">
+      <section className="flex flex-col items-center gap-5 pb-16 text-center">
+        <h1 className="max-w-2xl font-serif text-4xl leading-tight sm:text-5xl">
           {t("tagline")}
-        </p>
-        <p className="max-w-2xl text-zinc-600 dark:text-zinc-400">
+        </h1>
+        <p className="max-w-xl text-zinc-600 dark:text-zinc-400">
           {t("description")}
         </p>
-        <div className="flex flex-wrap gap-4 pt-2">
+        <div className="flex flex-wrap justify-center gap-4 pt-2">
           <Link
             href="/assistant"
-            className="rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-zinc-700"
+            className="border border-black px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
           >
             {t("ctaAssistant")}
           </Link>
           <Link
             href="/blog"
-            className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium transition-colors hover:bg-black/5 dark:border-white/10 dark:hover:bg-white/5"
+            className="px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] underline-offset-4 hover:underline"
           >
             {t("ctaBlog")}
           </Link>
         </div>
       </section>
 
-      <section className="mt-20">
-        <h2 className="mb-8 text-2xl font-semibold">{t("featuresTitle")}</h2>
-        <div className="grid gap-6 sm:grid-cols-3">
-          {features.map((feature) => (
-            <Link
-              key={feature.href}
-              href={feature.href}
-              className="rounded-2xl border border-black/10 p-6 transition-colors hover:bg-black/5 dark:border-white/10 dark:hover:bg-white/5"
-            >
-              <h3 className="mb-2 font-semibold">{feature.title}</h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                {feature.text}
-              </p>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <PostGrid />
+
+      <div className="mt-20">
+        <AboutSection />
+      </div>
     </div>
   );
 }

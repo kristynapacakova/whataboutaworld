@@ -1,9 +1,16 @@
 {
   "nav": {
     "home": "Domů",
+    "destinations": "Destinace",
     "blog": "Blog",
     "calculator": "Kalkulačka",
-    "assistant": "AI asistent"
+    "assistant": "AI asistent",
+    "shop": "Shop",
+    "shopChecklists": "Cestovní checklisty",
+    "shopGiftGuide": "Vánoční dárkový průvodce",
+    "shopMapPins": "Piny v Google Maps",
+    "about": "O nás",
+    "search": "Hledat"
   },
   "home": {
     "title": "What About A World",
@@ -17,7 +24,22 @@
     "featureCalculatorTitle": "Kalkulačka nákladů",
     "featureCalculatorText": "Orientační odhad cen letenek, ubytování, dopravy a aktivit.",
     "featureBlogTitle": "Cestovní blog",
-    "featureBlogText": "Tipy a zkušenosti z cest, které se dají rovnou použít."
+    "featureBlogText": "Tipy a zkušenosti z cest, které se dají rovnou použít.",
+    "posts": {
+      "readMore": "Číst článek",
+      "rome": { "title": "Řím: Kompletní cestovní průvodce" },
+      "bali": { "title": "Bali: Itinerář pro první návštěvu" },
+      "lisbon": { "title": "Lisabon: Průvodce na dlouhý víkend" },
+      "tokyo": { "title": "Tokio: Co vědět, než vyrazíš" },
+      "santorini": { "title": "Santorini: Kde bydlet a co vynechat" },
+      "mexico": { "title": "Mexico City: Průvodce jako od místních" }
+    }
+  },
+  "about": {
+    "greeting": "ahoj, čau, hello",
+    "body": "Jsme What About A World – cestovní projekt pro lidi, kteří si chtějí naplánovat cestu sami, bez cestovky, ale neví, kde začít. Najdeš tu náš blog, AI asistenta na plánování a nástroje, které ti pomůžou to udělat dobře.",
+    "favoritesTitle": "Naše oblíbené destinace",
+    "countries": ["Itálie", "Portugalsko", "Indonésie", "Japonsko", "Mexiko"]
   },
   "blog": {
     "title": "Blog",
@@ -43,6 +65,13 @@
     "placeholderMessage": "AI asistent se právě připravuje. Brzy tu s tebou budeme plánovat tvoji další cestu krok za krokem 🌍"
   },
   "footer": {
+    "instagramHandle": "@whataboutaworld",
+    "destinations": "Destinace",
+    "about": "O nás",
+    "blog": "Blog",
+    "shop": "Shop",
+    "privacy": "Ochrana soukromí",
+    "terms": "Podmínky",
     "rights": "Všechna práva vyhrazena."
   }
 }
