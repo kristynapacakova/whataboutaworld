@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import { getAllPosts } from "@/lib/blog";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("blog");
+  return {
+    title: `${t("title")} | What About A World`,
+    description: t("metaDescription"),
+  };
+}
 
 export default async function BlogPage() {
   const locale = await getLocale();

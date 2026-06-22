@@ -43,6 +43,7 @@
   },
   "blog": {
     "title": "Blog",
+    "metaDescription": "Real travel guides and honest tips - destinations, prices, what to see, and what to skip, written from our own trips.",
     "empty": "Articles are on their way - check back soon for our first tips and trip reports."
   },
   "calculator": {

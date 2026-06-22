@@ -10,6 +10,7 @@ export type PostMeta = {
   slug: string;
   title: string;
   excerpt: string;
+  metaDescription: string;
   date: string;
   destination: string;
   coverImage: string;
@@ -53,6 +54,7 @@ export function getPostMeta(locale: string, slug: string): PostMeta | null {
     slug,
     title: data.title ?? slug,
     excerpt: data.excerpt ?? "",
+    metaDescription: data.metaDescription ?? data.excerpt ?? "",
     date: data.date ?? "",
     destination: data.destination ?? "",
     coverImage: data.coverImage ?? "",
@@ -69,6 +71,7 @@ export async function getPost(locale: string, slug: string): Promise<Post | null
     slug,
     title: data.title ?? slug,
     excerpt: data.excerpt ?? "",
+    metaDescription: data.metaDescription ?? data.excerpt ?? "",
     date: data.date ?? "",
     destination: data.destination ?? "",
     coverImage: data.coverImage ?? "",

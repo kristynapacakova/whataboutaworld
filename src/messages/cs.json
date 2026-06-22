@@ -43,6 +43,7 @@
   },
   "blog": {
     "title": "Blog",
+    "metaDescription": "Reálné cestovní průvodce a upřímné tipy – destinace, ceny, co vidět a co vynechat, psané z vlastních cest.",
     "empty": "Články se připravují – brzy tu najdeš první tipy a reportáže z cest."
   },
   "calculator": {

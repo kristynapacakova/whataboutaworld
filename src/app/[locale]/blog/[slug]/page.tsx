@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getLocale } from "next-intl/server";
 import PlaceholderImage from "@/components/PlaceholderImage";
@@ -8,6 +9,37 @@ export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     getAllSlugs(locale).map((slug) => ({ locale, slug }))
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const locale = await getLocale();
+  const post = await getPost(locale, slug);
+
+  if (!post) {
+    return {};
+  }
+
+  const title = `${post.title} | What About A World`;
+
+  return {
+    title,
+    description: post.metaDescription,
+    openGraph: {
+      title,
+      description: post.metaDescription,
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: post.metaDescription,
+    },
+  };
 }
 
 export default async function BlogPostPage({
