@@ -17,7 +17,7 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className="border-t border-black/10 dark:border-white/10">
+      <div className="border-t border-black/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-8 text-xs font-medium uppercase tracking-[0.15em] text-zinc-500 sm:flex-row sm:justify-between">
           <nav className="flex gap-6">
             <Link href="/blog">{t("destinations")}</Link>
@@ -30,7 +30,7 @@ export default function Footer() {
             <Link href="/blog">{t("terms")}</Link>
           </nav>
         </div>
-        <div className="border-t border-black/5 px-6 py-4 text-center text-xs text-zinc-400 dark:border-white/5">
+        <div className="border-t border-black/5 px-6 py-4 text-center text-xs text-zinc-400">
           © {year} What About A World — {t("rights")}
         </div>
       </div>

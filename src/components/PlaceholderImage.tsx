@@ -7,7 +7,7 @@ export default function PlaceholderImage({
 }) {
   return (
     <div
-      className={`${aspect} ${className} flex items-center justify-center bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-900`}
+      className={`${aspect} ${className} flex items-center justify-center bg-gradient-to-br from-zinc-100 to-zinc-200`}
     >
       <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-zinc-400">
         photo

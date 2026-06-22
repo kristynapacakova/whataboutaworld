@@ -12,13 +12,13 @@ export default function HomePage() {
         <h1 className="max-w-2xl font-serif text-4xl leading-tight sm:text-5xl">
           {t("tagline")}
         </h1>
-        <p className="max-w-xl text-zinc-600 dark:text-zinc-400">
+        <p className="max-w-xl text-zinc-600">
           {t("description")}
         </p>
         <div className="flex flex-wrap justify-center gap-4 pt-2">
           <Link
             href="/assistant"
-            className="border border-black px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black"
+            className="border border-black px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] transition-colors hover:bg-black hover:text-white"
           >
             {t("ctaAssistant")}
           </Link>

@@ -12,17 +12,17 @@ export default function AssistantPage() {
   return (
     <div className="mx-auto max-w-2xl px-6 py-16">
       <h1 className="mb-4 text-3xl font-bold tracking-tight">{t("title")}</h1>
-      <p className="mb-2 text-zinc-600 dark:text-zinc-400">
+      <p className="mb-2 text-zinc-600">
         {t("description")}
       </p>
       <p className="mb-8 text-sm text-zinc-500">{t("emailGateNotice")}</p>
 
-      <div className="flex flex-col gap-4 rounded-2xl border border-black/10 p-6 dark:border-white/10">
+      <div className="flex flex-col gap-4 rounded-2xl border border-black/10 p-6">
         <div className="flex flex-col gap-3">
           {messages.map((message, i) => (
             <div
               key={i}
-              className="max-w-[80%] rounded-xl bg-black/5 px-4 py-3 text-sm dark:bg-white/5"
+              className="max-w-[80%] rounded-xl bg-black/5 px-4 py-3 text-sm"
             >
               {message.text}
             </div>
@@ -39,7 +39,7 @@ export default function AssistantPage() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder={t("inputPlaceholder")}
-            className="flex-1 rounded-full border border-black/10 px-4 py-2 text-sm dark:border-white/10"
+            className="flex-1 rounded-full border border-black/10 px-4 py-2 text-sm"
           />
           <button
             type="submit"

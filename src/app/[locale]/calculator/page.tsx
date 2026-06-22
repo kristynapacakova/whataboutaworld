@@ -14,11 +14,11 @@ export default function CalculatorPage() {
   return (
     <div className="mx-auto max-w-2xl px-6 py-16">
       <h1 className="mb-4 text-3xl font-bold tracking-tight">{t("title")}</h1>
-      <p className="mb-8 text-zinc-600 dark:text-zinc-400">
+      <p className="mb-8 text-zinc-600">
         {t("description")}
       </p>
 
-      <div className="flex flex-col gap-4 rounded-2xl border border-black/10 p-6 dark:border-white/10">
+      <div className="flex flex-col gap-4 rounded-2xl border border-black/10 p-6">
         {items.map((label) => (
           <label key={label} className="flex flex-col gap-1 text-sm">
             {label}
@@ -26,12 +26,12 @@ export default function CalculatorPage() {
               type="number"
               disabled
               placeholder="0 Kč"
-              className="rounded-lg border border-black/10 px-3 py-2 disabled:opacity-50 dark:border-white/10"
+              className="rounded-lg border border-black/10 px-3 py-2 disabled:opacity-50"
             />
           </label>
         ))}
 
-        <div className="mt-2 flex justify-between border-t border-black/10 pt-4 font-semibold dark:border-white/10">
+        <div className="mt-2 flex justify-between border-t border-black/10 pt-4 font-semibold">
           <span>{t("total")}</span>
           <span>0 Kč</span>
         </div>

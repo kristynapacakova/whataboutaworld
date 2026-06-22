@@ -10,7 +10,7 @@ export default function Header() {
   const [shopOpen, setShopOpen] = useState(false);
 
   return (
-    <header className="border-b border-black/10 dark:border-white/10">
+    <header className="border-b border-black/10">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-6">
         <Link
           href="/"
@@ -34,22 +34,22 @@ export default function Header() {
               {t("shop")}
             </button>
             {shopOpen && (
-              <div className="absolute left-1/2 top-full z-10 w-56 -translate-x-1/2 border border-black/10 bg-white py-3 normal-case tracking-normal shadow-sm dark:border-white/10 dark:bg-black">
+              <div className="absolute left-1/2 top-full z-10 w-56 -translate-x-1/2 border border-black/10 bg-white py-3 normal-case tracking-normal shadow-sm">
                 <Link
                   href="/blog"
-                  className="block px-5 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5"
+                  className="block px-5 py-2 text-sm hover:bg-black/5"
                 >
                   {t("shopChecklists")}
                 </Link>
                 <Link
                   href="/blog"
-                  className="block px-5 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5"
+                  className="block px-5 py-2 text-sm hover:bg-black/5"
                 >
                   {t("shopGiftGuide")}
                 </Link>
                 <Link
                   href="/blog"
-                  className="block px-5 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5"
+                  className="block px-5 py-2 text-sm hover:bg-black/5"
                 >
                   {t("shopMapPins")}
                 </Link>
