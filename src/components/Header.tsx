@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import LocaleSwitcher from "./LocaleSwitcher";
+import Link from "next/link";
 import SocialIcons from "./SocialIcons";
 
 export default function Header() {
@@ -13,7 +12,7 @@ export default function Header() {
   return (
     <header className="border-b border-accent-soft">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-6">
-        <Link href="/" className="font-corinthia text-4xl sm:text-5xl">
+        <Link href="/" className="font-corinthia text-3xl sm:text-4xl">
           what about a world
         </Link>
 
@@ -58,8 +57,7 @@ export default function Header() {
           <Link href="/blog">{t("about")}</Link>
         </nav>
 
-        <div className="flex w-full items-center justify-between text-sm">
-          <LocaleSwitcher />
+        <div className="flex w-full items-center justify-end text-sm">
           <div className="flex items-center gap-5">
             <SocialIcons />
             <label className="flex items-center gap-2 text-foreground/40">

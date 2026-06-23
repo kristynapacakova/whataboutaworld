@@ -11,7 +11,7 @@ export default function AssistantPage() {
 
   return (
     <div className="mx-auto max-w-2xl px-6 py-16">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight">{t("title")}</h1>
+      <h1 className="mb-4 text-2xl font-bold tracking-tight">{t("title")}</h1>
       <p className="mb-2 text-zinc-600">
         {t("description")}
       </p>

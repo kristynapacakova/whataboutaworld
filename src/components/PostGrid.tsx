@@ -1,11 +1,9 @@
-import { useLocale } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import PlaceholderImage from "./PlaceholderImage";
 import { getAllPosts } from "@/lib/blog";
 
 export default function PostGrid() {
-  const locale = useLocale();
-  const posts = getAllPosts(locale).slice(0, 6);
+  const posts = getAllPosts("en").slice(0, 6);
 
   if (posts.length === 0) {
     return null;
@@ -15,19 +13,14 @@ export default function PostGrid() {
     <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => (
         <article key={post.slug} className="group flex flex-col gap-3">
-          <Link
-            href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
-            className="block"
-          >
+          <Link href={`/blog/${post.slug}`} className="block">
             <PlaceholderImage />
           </Link>
           <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-accent">
             {post.destination}
           </p>
           <h3 className="font-serif text-lg leading-snug text-foreground transition-colors group-hover:text-accent-green">
-            <Link href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}>
-              {post.title}
-            </Link>
+            <Link href={`/blog/${post.slug}`}>{post.title}</Link>
           </h3>
         </article>
       ))}

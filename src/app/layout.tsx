@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
-import { hasLocale } from "next-intl";
-import { notFound } from "next/navigation";
+import { getMessages } from "next-intl/server";
 import { Geist, Playfair_Display, Caveat, Birthstone_Bounce } from "next/font/google";
-import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import "../globals.css";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,28 +33,16 @@ export const metadata: Metadata = {
     "Plan your own trip - no travel agency, no chaos. An AI assistant guides you step by step.",
 };
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
-
-export default async function LocaleLayout({
+export default async function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
-
-  setRequestLocale(locale);
   const messages = await getMessages();
 
   return (
     <html
-      lang={locale}
+      lang="en"
       className={`${geistSans.variable} ${playfair.variable} ${caveat.variable} ${corinthia.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">

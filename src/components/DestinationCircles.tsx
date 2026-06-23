@@ -1,11 +1,9 @@
-import { useLocale } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import PlaceholderImage from "./PlaceholderImage";
 import { getAllPosts } from "@/lib/blog";
 
 export default function DestinationCircles() {
-  const locale = useLocale();
-  const posts = getAllPosts(locale).slice(0, 6);
+  const posts = getAllPosts("en").slice(0, 6);
 
   if (posts.length === 0) {
     return null;
@@ -16,7 +14,7 @@ export default function DestinationCircles() {
       {posts.map((post) => (
         <Link
           key={post.slug}
-          href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
+          href={`/blog/${post.slug}`}
           className="group flex flex-col items-center gap-3"
         >
           <PlaceholderImage

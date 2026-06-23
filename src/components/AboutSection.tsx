@@ -8,7 +8,7 @@ export default function AboutSection() {
   return (
     <section className="grid grid-cols-1 items-center gap-10 border-t border-accent-soft py-16 sm:grid-cols-2">
       <div>
-        <p className="font-script text-4xl leading-none text-accent-green sm:text-5xl">
+        <p className="font-script text-3xl leading-none text-accent-green sm:text-4xl">
           {t("greeting")}
         </p>
         <p className="mt-6 max-w-md text-foreground/70">

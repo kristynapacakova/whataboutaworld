@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import PostGrid from "@/components/PostGrid";
 import DestinationCircles from "@/components/DestinationCircles";
 import AboutSection from "@/components/AboutSection";
@@ -12,10 +12,10 @@ export default function HomePage() {
   return (
     <div>
       <section className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-6 pb-12 pt-12 text-center">
-        <h1 className="max-w-2xl font-serif text-4xl leading-tight sm:text-5xl">
+        <h1 className="max-w-2xl font-serif text-3xl leading-tight sm:text-4xl">
           {t("tagline")}
         </h1>
-        <p className="max-w-xl text-foreground/70">{t("description")}</p>
+        <p className="max-w-xl text-sm text-foreground/70">{t("description")}</p>
         <div className="flex flex-wrap justify-center gap-4 pt-2">
           <Link
             href="/assistant"

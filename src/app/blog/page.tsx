@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { getLocale, getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import { getAllPosts } from "@/lib/blog";
 
@@ -13,14 +13,13 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function BlogPage() {
-  const locale = await getLocale();
-  const posts = getAllPosts(locale);
+  const posts = getAllPosts("en");
   const t = await getTranslations("blog");
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-16">
       <div className="mb-12">
-        <h1 className="mb-4 font-serif text-4xl">{t("title")}</h1>
+        <h1 className="mb-4 font-serif text-3xl">{t("title")}</h1>
         {posts.length === 0 && <p className="text-zinc-600">{t("empty")}</p>}
       </div>
 
@@ -28,7 +27,7 @@ export default async function BlogPage() {
         <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <article key={post.slug} className="flex flex-col gap-4">
-              <Link href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}>
+              <Link href={`/blog/${post.slug}`}>
                 <PlaceholderImage />
               </Link>
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">
@@ -39,7 +38,7 @@ export default async function BlogPage() {
               </h3>
               <p className="text-sm text-zinc-600">{post.excerpt}</p>
               <Link
-                href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
+                href={`/blog/${post.slug}`}
                 className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 underline-offset-4 hover:underline"
               >
                 Read the post
