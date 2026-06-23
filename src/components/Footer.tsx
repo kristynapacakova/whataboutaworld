@@ -8,17 +8,17 @@ export default function Footer() {
 
   return (
     <footer className="mt-20">
-      <div className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-zinc-400">
+      <div className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-foreground/40">
         {t("instagramHandle")}
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-6">
         {Array.from({ length: 6 }).map((_, i) => (
-          <PlaceholderImage key={i} aspect="aspect-square" polaroid={false} />
+          <PlaceholderImage key={i} aspect="aspect-square" rounded="" />
         ))}
       </div>
 
-      <div className="border-t border-black/10">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-8 text-xs font-medium uppercase tracking-[0.15em] text-zinc-500 sm:flex-row sm:justify-between">
+      <div className="border-t border-accent-soft">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-8 text-xs font-medium uppercase tracking-[0.15em] text-foreground/60 sm:flex-row sm:justify-between">
           <nav className="flex gap-6">
             <Link href="/blog">{t("destinations")}</Link>
             <Link href="/blog">{t("about")}</Link>
@@ -30,7 +30,7 @@ export default function Footer() {
             <Link href="/blog">{t("terms")}</Link>
           </nav>
         </div>
-        <div className="border-t border-black/5 px-6 py-4 text-center text-xs text-zinc-400">
+        <div className="border-t border-accent-soft/60 px-6 py-4 text-center text-xs text-foreground/40">
           © {year} What About A World — {t("rights")}
         </div>
       </div>

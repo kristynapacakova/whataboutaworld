@@ -2,12 +2,12 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #f3ead4;
-  --foreground: #2e2a22;
-  --accent: #9c3b35;
-  --accent-soft: #d8c79c;
-  --accent-green: #4c5f4a;
-  --card: #fffaf0;
+  --background: #ffffff;
+  --foreground: #2b3440;
+  --accent: #7e96aa;
+  --accent-soft: #e6ecf0;
+  --accent-green: #44566a;
+  --card: #f7f9fb;
 }
 
 @theme inline {
@@ -24,10 +24,7 @@
 }
 
 body {
-  background-color: var(--background);
-  background-image:
-    radial-gradient(circle at 1px 1px, rgba(46, 42, 34, 0.05) 1px, transparent 0);
-  background-size: 18px 18px;
+  background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -45,14 +42,4 @@ html {
 [data-reveal].is-visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-.polaroid {
-  background: var(--card);
-  padding: 0.75rem 0.75rem 1.5rem;
-  box-shadow: 0 6px 16px rgba(46, 42, 34, 0.15);
-}
-
-.postmark {
-  border: 1.5px dashed var(--accent);
 }

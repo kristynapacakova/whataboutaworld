@@ -10,7 +10,7 @@ export default function Header() {
   const [shopOpen, setShopOpen] = useState(false);
 
   return (
-    <header className="border-b border-black/10">
+    <header className="border-b border-accent-soft">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-6">
         <Link href="/" className="font-corinthia text-4xl sm:text-5xl">
           what about a world
@@ -31,7 +31,7 @@ export default function Header() {
               {t("shop")}
             </button>
             {shopOpen && (
-              <div className="absolute left-1/2 top-full z-10 w-56 -translate-x-1/2 border border-black/10 bg-white py-3 normal-case tracking-normal shadow-sm">
+              <div className="absolute left-1/2 top-full z-10 w-56 -translate-x-1/2 border border-accent-soft bg-card py-3 normal-case tracking-normal shadow-sm">
                 <Link
                   href="/blog"
                   className="block px-5 py-2 text-sm hover:bg-black/5"
@@ -59,7 +59,7 @@ export default function Header() {
 
         <div className="flex w-full items-center justify-between text-sm">
           <LocaleSwitcher />
-          <label className="flex items-center gap-2 text-zinc-400">
+          <label className="flex items-center gap-2 text-foreground/40">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -74,7 +74,7 @@ export default function Header() {
             <input
               type="search"
               placeholder={t("search")}
-              className="w-32 bg-transparent text-xs outline-none placeholder:text-zinc-400 sm:w-48"
+              className="w-32 bg-transparent text-xs outline-none placeholder:text-foreground/40 sm:w-48"
             />
           </label>
         </div>

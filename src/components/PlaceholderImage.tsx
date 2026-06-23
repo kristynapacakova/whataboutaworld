@@ -1,27 +1,19 @@
 export default function PlaceholderImage({
   aspect = "aspect-[3/4]",
   className = "",
-  rotate = "",
-  polaroid = true,
+  rounded = "rounded-lg",
 }: {
   aspect?: string;
   className?: string;
-  rotate?: string;
-  polaroid?: boolean;
+  rounded?: string;
 }) {
-  const frame = (
+  return (
     <div
-      className={`${aspect} flex items-center justify-center bg-gradient-to-br from-accent-soft/50 via-background to-accent-green/15`}
+      className={`${aspect} ${rounded} ${className} flex items-center justify-center overflow-hidden bg-gradient-to-br from-accent-soft via-card to-accent-soft transition-transform duration-500 hover:scale-[1.02]`}
     >
       <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-foreground/30">
         photo
       </span>
     </div>
   );
-
-  if (!polaroid) {
-    return <div className={className}>{frame}</div>;
-  }
-
-  return <div className={`polaroid ${rotate} ${className}`}>{frame}</div>;
 }
