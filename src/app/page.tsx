@@ -12,20 +12,20 @@ export default function HomePage() {
   return (
     <div>
       <section className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-6 pb-12 pt-12 text-center">
-        <h1 className="max-w-2xl font-serif text-3xl leading-tight sm:text-4xl">
+        <h1 className="max-w-2xl font-serif text-2xl leading-tight sm:text-3xl">
           {t("tagline")}
         </h1>
-        <p className="max-w-xl text-sm text-foreground/70">{t("description")}</p>
+        <p className="max-w-xl text-xs text-foreground/70 sm:text-sm">{t("description")}</p>
         <div className="flex flex-wrap justify-center gap-4 pt-2">
           <Link
             href="/assistant"
-            className="bg-accent-green px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent"
+            className="bg-accent-green px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent"
           >
             {t("ctaAssistant")}
           </Link>
           <Link
             href="/blog"
-            className="border border-accent-green px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-accent-green transition-colors hover:bg-accent-soft"
+            className="border border-accent-green px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.15em] text-accent-green transition-colors hover:bg-accent-soft"
           >
             {t("ctaBlog")}
           </Link>
@@ -41,7 +41,7 @@ export default function HomePage() {
 
       <div className="mx-auto max-w-6xl px-6 py-20">
         <Reveal>
-          <h2 className="mb-10 text-center text-xs font-medium uppercase tracking-[0.3em] text-accent">
+          <h2 className="mb-10 text-center text-[11px] font-medium uppercase tracking-[0.3em] text-accent">
             {t("exploreByDestination")}
           </h2>
           <DestinationCircles />

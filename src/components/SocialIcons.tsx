@@ -13,7 +13,7 @@ export default function SocialIcons({ className = "" }: { className?: string }) 
           fill="none"
           stroke="currentColor"
           strokeWidth={1.5}
-          className="h-5 w-5"
+          className="h-4 w-4"
         >
           <rect x="3" y="3" width="18" height="18" rx="5" />
           <circle cx="12" cy="12" r="4" />
@@ -32,7 +32,7 @@ export default function SocialIcons({ className = "" }: { className?: string }) 
           fill="none"
           stroke="currentColor"
           strokeWidth={1.5}
-          className="h-5 w-5"
+          className="h-4 w-4"
         >
           <circle cx="12" cy="12" r="9" />
           <path d="M9.5 19c.6-2.3 1.2-4.8 1.8-7.2M11.3 11.8c-.5 2-1 4-1.5 6M9.7 13.4c-.4-1-.2-3.1 2-3.6 2.4-.6 3.6 1 3.4 2.7-.2 1.8-1.4 3.1-2.8 2.9-1-.1-1.3-.7-1.3-.7" />
