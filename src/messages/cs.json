@@ -26,13 +26,7 @@
     "featureBlogTitle": "Cestovní blog",
     "featureBlogText": "Tipy a zkušenosti z cest, které se dají rovnou použít.",
     "posts": {
-      "readMore": "Číst článek",
-      "rome": { "title": "Řím: Kompletní cestovní průvodce" },
-      "bali": { "title": "Bali: Itinerář pro první návštěvu" },
-      "lisbon": { "title": "Lisabon: Průvodce na dlouhý víkend" },
-      "tokyo": { "title": "Tokio: Co vědět, než vyrazíš" },
-      "santorini": { "title": "Santorini: Kde bydlet a co vynechat" },
-      "mexico": { "title": "Mexico City: Průvodce jako od místních" }
+      "readMore": "Číst článek"
     }
   },
   "about": {
