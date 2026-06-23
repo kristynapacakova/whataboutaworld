@@ -6,17 +6,17 @@ export default function AboutSection() {
   const countries = t.raw("countries") as string[];
 
   return (
-    <section className="grid grid-cols-1 items-center gap-10 border-y border-black/10 py-16 sm:grid-cols-2">
+    <section className="grid grid-cols-1 items-center gap-10 rounded-3xl bg-card py-16 sm:grid-cols-2 sm:px-10">
       <PlaceholderImage aspect="aspect-square" />
       <div>
-        <p className="font-script text-4xl leading-none sm:text-5xl">
+        <p className="font-script text-4xl leading-none text-accent sm:text-5xl">
           {t("greeting")}
         </p>
-        <p className="mt-6 max-w-md text-zinc-600">
+        <p className="mt-6 max-w-md text-foreground/70">
           {t("body")}
         </p>
 
-        <p className="mt-8 text-xs font-medium uppercase tracking-[0.2em] text-zinc-500">
+        <p className="mt-8 text-xs font-medium uppercase tracking-[0.2em] text-accent-green">
           {t("favoritesTitle")}
         </p>
         <ol className="mt-3 flex flex-col gap-1 font-serif text-lg">
