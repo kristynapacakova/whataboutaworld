@@ -5,9 +5,12 @@ import DestinationCircles from "@/components/DestinationCircles";
 import AboutSection from "@/components/AboutSection";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import Reveal from "@/components/Reveal";
+import StatsCounter from "@/components/StatsCounter";
+import { getTravelStats } from "@/lib/blog";
 
 export default function HomePage() {
   const t = useTranslations("home");
+  const stats = getTravelStats("en");
 
   return (
     <div>
@@ -38,6 +41,10 @@ export default function HomePage() {
         <PlaceholderImage aspect="aspect-[3/4]" />
         <PlaceholderImage aspect="aspect-[3/4]" className="hidden sm:block" />
       </div>
+
+      <Reveal className="mx-auto max-w-6xl px-6 pt-16">
+        <StatsCounter trips={stats.trips} countries={stats.countries} />
+      </Reveal>
 
       <div className="mx-auto max-w-6xl px-6 py-20">
         <Reveal>

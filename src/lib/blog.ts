@@ -61,6 +61,18 @@ export function getPostMeta(locale: string, slug: string): PostMeta | null {
   };
 }
 
+export function getTravelStats(locale: string) {
+  const posts = getAllPosts(locale);
+  const countries = new Set(
+    posts.map((post) => post.destination.split(",").pop()?.trim()).filter(Boolean)
+  );
+
+  return {
+    trips: posts.length,
+    countries: countries.size,
+  };
+}
+
 export async function getPost(locale: string, slug: string): Promise<Post | null> {
   const raw = readFile(locale, slug);
   if (!raw) return null;
