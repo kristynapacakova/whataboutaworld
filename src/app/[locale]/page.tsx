@@ -10,11 +10,23 @@ export default function HomePage() {
   return (
     <div className="overflow-hidden">
       <section className="relative mx-auto flex max-w-6xl flex-col items-center gap-5 px-6 pb-20 pt-12 text-center">
-        <div
+        <svg
           aria-hidden
-          className="absolute -top-24 left-1/2 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-accent-soft/30 blur-3xl sm:h-96 sm:w-96"
-        />
-        <p className="font-script text-3xl text-accent sm:text-4xl">
+          viewBox="0 0 600 200"
+          className="absolute top-4 left-1/2 -z-10 w-[36rem] -translate-x-1/2 text-accent/40"
+        >
+          <path
+            d="M20 160 Q 300 -20 580 100"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeDasharray="6 8"
+            strokeLinecap="round"
+          />
+          <circle cx="580" cy="100" r="4" fill="currentColor" />
+        </svg>
+
+        <p className="postmark inline-block -rotate-2 rounded-sm px-4 py-2 font-script text-3xl text-accent sm:text-4xl">
           what about a world
         </p>
         <h1 className="max-w-2xl font-serif text-4xl leading-tight sm:text-5xl">
@@ -26,13 +38,13 @@ export default function HomePage() {
         <div className="flex flex-wrap justify-center gap-4 pt-2">
           <Link
             href="/assistant"
-            className="rounded-full bg-accent px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-green"
+            className="border-2 border-accent bg-accent px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-card transition-colors hover:bg-transparent hover:text-accent"
           >
             {t("ctaAssistant")}
           </Link>
           <Link
             href="/blog"
-            className="rounded-full border border-accent/30 px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] transition-colors hover:bg-accent/10"
+            className="postmark px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-accent transition-colors hover:bg-accent/10"
           >
             {t("ctaBlog")}
           </Link>

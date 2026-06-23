@@ -12,17 +12,19 @@ export default function PostGrid() {
     return null;
   }
 
+  const rotations = ["-rotate-2", "rotate-1", "rotate-2", "-rotate-1", "rotate-2", "-rotate-2"];
+
   return (
-    <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-      {posts.map((post) => (
-        <article key={post.slug} className="group flex flex-col gap-4">
+    <div className="grid grid-cols-1 gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+      {posts.map((post, i) => (
+        <article key={post.slug} className="group flex flex-col gap-3">
           <Link
             href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
-            className="block overflow-hidden rounded-3xl"
+            className="block transition-transform duration-300 group-hover:rotate-0"
           >
-            <PlaceholderImage />
+            <PlaceholderImage rotate={rotations[i % rotations.length]} />
           </Link>
-          <h3 className="font-sans text-base font-semibold uppercase tracking-wide transition-colors group-hover:text-accent">
+          <h3 className="font-script text-2xl text-foreground transition-colors group-hover:text-accent">
             {post.title}
           </h3>
           <Link

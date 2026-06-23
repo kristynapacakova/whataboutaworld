@@ -6,8 +6,8 @@ export default function AboutSection() {
   const countries = t.raw("countries") as string[];
 
   return (
-    <section className="grid grid-cols-1 items-center gap-10 rounded-3xl bg-card py-16 sm:grid-cols-2 sm:px-10">
-      <PlaceholderImage aspect="aspect-square" />
+    <section className="grid grid-cols-1 items-center gap-10 border-t-2 border-dashed border-accent/30 py-16 sm:grid-cols-2">
+      <PlaceholderImage aspect="aspect-square" rotate="-rotate-1" />
       <div>
         <p className="font-script text-4xl leading-none text-accent sm:text-5xl">
           {t("greeting")}

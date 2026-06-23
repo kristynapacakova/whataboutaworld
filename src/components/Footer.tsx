@@ -13,7 +13,7 @@ export default function Footer() {
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-6">
         {Array.from({ length: 6 }).map((_, i) => (
-          <PlaceholderImage key={i} aspect="aspect-square" />
+          <PlaceholderImage key={i} aspect="aspect-square" polaroid={false} />
         ))}
       </div>
 
