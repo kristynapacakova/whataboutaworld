@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
+import SocialIcons from "./SocialIcons";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -59,24 +60,27 @@ export default function Header() {
 
         <div className="flex w-full items-center justify-between text-sm">
           <LocaleSwitcher />
-          <label className="flex items-center gap-2 text-foreground/40">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={1.5}
-              className="h-4 w-4"
-            >
-              <circle cx="11" cy="11" r="7" />
-              <path d="m21 21-4.3-4.3" />
-            </svg>
-            <input
-              type="search"
-              placeholder={t("search")}
-              className="w-32 bg-transparent text-xs outline-none placeholder:text-foreground/40 sm:w-48"
-            />
-          </label>
+          <div className="flex items-center gap-5">
+            <SocialIcons />
+            <label className="flex items-center gap-2 text-foreground/40">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                className="h-4 w-4"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+              <input
+                type="search"
+                placeholder={t("search")}
+                className="w-32 bg-transparent text-xs outline-none placeholder:text-foreground/40 sm:w-48"
+              />
+            </label>
+          </div>
         </div>
       </div>
     </header>

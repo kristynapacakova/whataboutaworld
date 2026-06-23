@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import PlaceholderImage from "./PlaceholderImage";
+import SocialIcons from "./SocialIcons";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -8,6 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-20">
+      <SocialIcons className="mb-3 justify-center" />
       <div className="mb-2 text-center text-xs font-medium uppercase tracking-[0.2em] text-foreground/40">
         {t("instagramHandle")}
       </div>
